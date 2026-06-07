@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-row">
+                <div class="header-name">LARA K.</div>
+                <div class="col d-flex justify-content-end">
+                    <input type="checkbox" id="burgerToggle" class="d-none">
+                    
+                    <label for="burgerToggle" class="navbar-toggler d-lg-none border-0 p-2">
+                        <span class="burger-line d-block bg-dark mb-1" style="width: 25px; height: 3px;"></span>
+                        <span class="burger-line d-block bg-dark mb-1" style="width: 25px; height: 3px;"></span>
+                        <span class="burger-line d-block bg-dark mb-1" style="width: 25px; height: 3px;"></span>
+                    </label>
+                    
+                    <nav class="d-none d-lg-flex align-items-center gap-4">
+                        <a href="#hero" class="nav-items">Главная</a>
+                        <a href="#aboutme" class="nav-items">Обо мне</a>
+                        <a href="#skills" class="nav-items">Навыки</a>
+                        <a href="#portpholio" class="nav-items">Портфолио</a>
+                        <a href="#contacts" class="nav-items">Контакты</a>
+                    </nav>
+                    
+                    <div class="mobile-menu d-lg-none">
+                        <div class="offcanvas offcanvas-end" tabindex="-1">
+                            <div class="offcanvas-header justify-content-end">
+                                <label for="burgerToggle" class="btn-close" type="button"></label>
+                            </div>
+                            <div class="offcanvas-body d-flex flex-column justify-content-center gap-4">
+                                <a href="#hero" class="nav-items">Главная</a>
+                                <a href="#aboutme" class="nav-items">Обо мне</a>
+                                <a href="#skills" class="nav-items">Навыки</a>
+                                <a href="#portpholio" class="nav-items">Портфолио</a>
+                                <a href="#contacts" class="nav-items">Контакты</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section id="hero">
+            <div class="hero">
+                <div class="hero-content">
+                    <div class="hero-text d-flex flex-column justify-content-between h-100">
+                        <div class="hero-job align-self-start">FRONTEND-РАЗРАБОТЧИК</div>
+                        <div class="align-self-start fs-215">КИЧИГИНА ЛАРИСА</div>
+                        <div class="hero-job text-start text-lg-end">WEB-ДИЗАЙНЕР</div>
+                    </div>
+                    <div class="hero-circle"></div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="aboutme">
+            <div class="aboutme">
+                <div class="container-fluid p-0">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-9 col-md-7 col-lg-4 p-0">
+                            <img src="/img/photoo.png" class="d-block m-0 p-0" alt="photoo" />
+                        </div>
+                        <div class="col-12 col-lg-7 ps-3">
+                            <h2 class="fs-110">Обо мне</h2>
+                            <p class="fs-30">Привет! Меня зовут Кичигина Лариса. Я студентка 3 курса РГУ им. Косыгина по направлению "Информационные системы и технологии в дизайне".</p>
+                            <p class="fs-30">Я специализируюсь на веб-дизайне и фронтенд-разработке. Моя цель - создавать современные, удобные и визуально привлекательные диджитал-продукты, которые решают реальные проблемы пользователей. </p>
+                            <div id="expandableContent" class="expandable-content">
+                                <p class="fs-30">Отличаюсь внимательностью к деталям и стремлением к постоянному профессиональному развитию. Ищу возможность применить свои знания на практике и внести вклад в создание качественных веб-решений</p>
+                                <p class="fs-30">Это - мой сайт-резюме, где вы найдете информацию о моих навыках, портфолио и способы связаться со мной.</p>
+                            </div>
+                            <div class="row mt-3" style="color: #908A86; font-weight: 200; font-family: 'Alumni Sans', sans-serif; font-size: 26px;">
+                                <div class="aboutme-toggle" id="toggleButton" style="cursor: pointer;">
+                                    <p class="m-0 me-2" style="color: #908A86; font-weight: 200;">Свернуть</p>
+                                    <img src="img/Vector.png" alt="vector" style="width: 12px; height: 8px; transform: rotate(0deg); transition: transform 0.3s ease;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills">
+            <div class="skills">
+                <div class="container-fluid p-0">
+                    <div class="column">
+                        <div class="fs-110">Навыки</div>
+
+                        <div class="fs-556">Фронтенд-разработка</div>
+                        <div class="container-fluid p-0">
+                            <div class="row">
+                                <div class="col-12 col-lg-7">
+                                    <div class="fs-30 text-start">Создаю современные, адаптивные и интерактивные веб-сайты и приложения. 
+                                        Моя работа — это не просто вёрстка страниц, а программирование сложной логики и поведения интерфейса, 
+                                        чтобы всё работало быстро, понятно и удобно для пользователя. От прототипа до готового продукта.
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12 col-md-8 col-lg-4 ms-0 mt-4 mt-lg-0 ms-lg-5">
+                                    <div class="d-flex flex-column justify-content-between">
+                                        <div class="d-flex justify-content-between mb-3 gap-2">
+                                            <img src="/img/html.png" alt="html" class="img-fluid w-25">
+                                            <img src="/img/css.png" alt="css" class="img-fluid w-25">
+                                            <img src="/img/js.png" alt="js" class="img-fluid w-25">
+                                            <img src="/img/react.png" alt="react" class="img-fluid w-25">
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mb-3 gap-2">
+                                            <img src="/img/sass.png" alt="sass" class="img-fluid w-25">
+                                            <img src="/img/bootstrap.png" alt="bootstrap" class="img-fluid w-25">
+                                            <img src="/img/json.png" alt="json" class="img-fluid w-25">
+                                            <img src="/img/sql.png" alt="sql" class="img-fluid w-25">
+                                        </div>
+
+                                        <div class="" style="font-weight: 400; font-family: 'Alumni Sans', sans-serif; font-size: 24px; color: #5E4838;">*HTML, CSS, JavaScript, React, SASS/SCSS, Bootstrap, JSON, SQL </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fs-556 mt-4">Дизайн и визуализация</div>
+                        <div class="container-fluid p-0">
+                            <div class="row">
+                                <div class="col-12 col-lg-7">
+                                    <div class="fs-30 text-start">Разрабатываю дизайн-макеты интерфейсов, создаю векторную и пиксельную графику, 
+                                        а также оживляю её с помощью 2D-анимации. Базовые знания 3D в Blender позволяют мне работать с трёхмерными
+                                        объектами для веба и визуализации.
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12 col-md-8 col-lg-4 ms-0 mt-4 mt-lg-0 ms-lg-5">
+                                    <div class="d-flex flex-column justify-content-between">
+                                        <div class="d-flex justify-content-between mb-3 gap-2">
+                                            <img src="/img/figma.png" alt="figma" class="img-fluid w-25">
+                                            <img src="/img/adobe.png" alt="adobe" class="img-fluid w-25">
+                                            <img src="/img/procreate.png" alt="procreate" class="img-fluid w-25">
+                                            <img src="/img/blender.png" alt="blender" class="img-fluid w-25">
+                                        </div>
+
+                                        <div class="" style="font-weight: 400; font-family: 'Alumni Sans', sans-serif; font-size: 24px; color: #5E4838;">*HTML, CSS, JavaScript, React, SASS/SCSS, Bootstrap, JSON, SQL </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="portpholio">
+            <div class="portpholio">
+                <div class="container-fluid p-0">
+                    <div class="column">
+                        <div class="fs-110">Портфолио</div>
+
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+                            <!-- Карточка 1 -->
+                            <div class="col">
+                                <div class="card h-100 rounded-5 d-flex flex-column" style="border-color: #FFDCE8; border-width: 5px">
+                                    <img src="/img/nii.png" alt="НИИ ВРАР" class="card-img-top rounded-top-5" style="height: 200px; object-fit: cover;">
+                                    <div class="w-100" style="border-bottom: 5px solid #FFDCE8; height: 5px;"></div>
+                                    <div class="card-body px-4 py-0 d-flex flex-column flex-grow-1">
+                                        <div class="fs-558">НИИ ВРАР</div>
+                                        <p class="mb-4">Учебный проект: макет и адаптивная вёрстка многостраничного сайта</p>
+                                        <div class="d-flex flex-wrap gap-1 mb-4">
+                                            <button class="mb-1 btn border-0 rounded-pill fs-16" style="background-color: #F0F0F0; font-family: 'Alumni Sans', sans-serif;">#figma</button>
+                                            <button class="mb-1 btn border-0 rounded-pill fs-16" style="background-color: #F0F0F0; font-family: 'Alumni Sans', sans-serif;">#html</button>
+                                            <button class="mb-1 btn border-0 rounded-pill fs-16" style="background-color: #F0F0F0; font-family: 'Alumni Sans', sans-serif;">#css</button>
+                                            <button class="mb-1 btn border-0 rounded-pill fs-16" style="background-color: #F0F0F0; font-family: 'Alumni Sans', sans-serif;">#bootstrap</button>
+                                            <button class="mb-1 btn border-0 rounded-pill fs-16" style="background-color: #F0F0F0; font-family: 'Alumni Sans', sans-serif;">#js</button>
+                                            <button class="mb-1 btn border-0 rounded-pill fs-16" style="background-color: #F0F0F0; font-family: 'Alumni Sans', sans-serif;">#json</button>
+                                            <button class="mb-1 btn border-0 rounded-pill fs-16" style="background-color: #F0F0F0; font-family: 'Alumni Sans', sans-serif;">#react</button>
+                                        </div>
+                                        <div class="mt-auto">
+                                            <div class="container-fluid p-0 mb-4">
+                                                <div class="row g-2 align-items-center">
+                                                    <div class="col-4 pe-1">
+                                                        <a href="#" class="btn w-100 rounded-4 border-0 fs-12 text-nowrap"
+                                                        style="font-family: 'Alumni Sans', sans-serif; font-size: 20px; --bs-btn-bg: #FFDCE8; --bs-btn-color: #5E4838; --bs-btn-hover-bg: #ffcfe1; padding-top: 12px; padding-bottom: 12px;">
+                                                            Демо
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-8 ps-1">
+                                                        <a href="#" class="btn w-100 rounded-4 border-0 fs-12 text-nowrap"
+                                                        style="font-family: 'Alumni Sans', sans-serif; font-size: 20px; --bs-btn-bg: #FFDCE8; --bs-btn-color: #5E4838; --bs-btn-hover-bg: #ffcfe1; padding-top: 12px; padding-bottom: 12px;">
+                                                            Исходный код
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Карточка 2 -->
+                            <div class="col">
+                                <div class="card h-100 rounded-5 d-flex flex-column" style="border-color: #FFDCE8; border-width: 5px">
+                                    <img src="/img/okna.png" alt="Магазин окон" class="card-img-top rounded-top-5" style="height: 200px; object-fit: cover;">
+                                    <div class="w-100" style="border-bottom: 5px solid #FFDCE8; height: 5px;"></div>
+                                    <div class="card-body px-4 py-0 d-flex flex-column flex-grow-1">
+                                        <div class="fs-558">Магазин окон</div>
+                                        <p class="mb-4">Учебный проект: лендинг и адаптивная вёрстка сайта</p>
+                                        <div class="d-flex flex-wrap gap-1 mb-4">
+                                            <button class="mb-1 btn border-0 rounded-pill fs-16" style="background-color: #F0F0F0; font-family: 'Alumni Sans', sans-serif;">#figma</button>
+                                            <button class="mb-1 btn border-0 rounded-pill fs-16" style="background-color: #F0F0F0; font-family: 'Alumni Sans', sans-serif;">#html</button>
+                                            <button class="mb-1 btn border-0 rounded-pill fs-16" style="background-color: #F0F0F0; font-family: 'Alumni Sans', sans-serif;">#css</button>
+                                            <button class="mb-1 btn border-0 rounded-pill fs-16" style="background-color: #F0F0F0; font-family: 'Alumni Sans', sans-serif;">#js</button>
+                                        </div>
+                                        <div class="mt-auto">
+                                            <div class="container-fluid p-0 mb-4">
+                                                <div class="row g-2 align-items-center">
+                                                    <div class="col-4 pe-1">
+                                                        <a href="#" class="btn w-100 rounded-4 border-0 fs-12 text-nowrap"
+                                                        style="font-family: 'Alumni Sans', sans-serif; font-size: 20px; --bs-btn-bg: #FFDCE8; --bs-btn-color: #5E4838; --bs-btn-hover-bg: #ffcfe1; padding-top: 12px; padding-bottom: 12px;">
+                                                            Демо
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-8 ps-1 ">
+                                                        <a href="#" class="btn w-100 rounded-4 border-0 fs-12 text-nowrap"
+                                                        style="font-family: 'Alumni Sans', sans-serif; font-size: 20px; --bs-btn-bg: #FFDCE8; --bs-btn-color: #5E4838; --bs-btn-hover-bg: #ffcfe1; padding-top: 12px; padding-bottom: 12px;">
+                                                            Исходный код
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Карточка 3 -->
+                            <div class="col">
+                                <div class="card h-100 rounded-5 d-flex flex-column" style="border-color: #FFDCE8; border-width: 5px">
+                                    <img src="/img/showroom.png" alt="Шоурум" class="card-img-top rounded-top-5" style="height: 200px; object-fit: cover;">
+                                    <div class="w-100" style="border-bottom: 5px solid #FFDCE8; height: 5px;"></div>
+                                    <div class="card-body px-4 py-0 d-flex flex-column flex-grow-1">
+                                        <div class="fs-558">Шоурум</div>
+                                        <p class="mb-4">Учебный проект: макет и адаптивная вёрстка многостраничного сайта</p>
+                                        <div class="d-flex flex-wrap gap-1 mb-4">
+                                            <button class="mb-1 btn border-0 rounded-pill fs-16" style="background-color: #F0F0F0; font-family: 'Alumni Sans', sans-serif;">#figma</button>
+                                            <button class="mb-1 btn border-0 rounded-pill fs-16" style="background-color: #F0F0F0; font-family: 'Alumni Sans', sans-serif;">#html</button>
+                                            <button class="mb-1 btn border-0 rounded-pill fs-16" style="background-color: #F0F0F0; font-family: 'Alumni Sans', sans-serif;">#css</button>
+                                            <button class="mb-1 btn border-0 rounded-pill fs-16" style="background-color: #F0F0F0; font-family: 'Alumni Sans', sans-serif;">#bootstrap</button>
+                                            <button class="mb-1 btn border-0 rounded-pill fs-16" style="background-color: #F0F0F0; font-family: 'Alumni Sans', sans-serif;">#js</button>
+                                        </div>
+                                        <div class="mt-auto">
+                                            <div class="container-fluid p-0 mb-4">
+                                                <div class="row g-2 align-items-center">
+                                                    <div class="col-4 pe-1">
+                                                        <a href="#" class="btn w-100 rounded-4 border-0 fs-12 text-nowrap"
+                                                        style="font-family: 'Alumni Sans', sans-serif; font-size: 20px; --bs-btn-bg: #FFDCE8; --bs-btn-color: #5E4838; --bs-btn-hover-bg: #ffcfe1; padding-top: 12px; padding-bottom: 12px;">
+                                                            Демо
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-8 ps-1">
+                                                        <a href="#" class="btn w-100 rounded-4 border-0 fs-12 text-nowrap"
+                                                        style="font-family: 'Alumni Sans', sans-serif; font-size: 20px; --bs-btn-bg: #FFDCE8; --bs-btn-color: #5E4838; --bs-btn-hover-bg: #ffcfe1; padding-top: 12px; padding-bottom: 12px;">
+                                                            Исходный код
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contacts">
+            <div class="contacts">
+                <div class="container-fluid p-0">
+                    <div class="row" style="min-height: 800px;">
+                        <div class="col-lg-6 d-flex flex-column"> 
+                            <div class="fs-110 mb-lg-4 mb-2 mt-lg-5 mt-3">Контакты</div> 
+                            <div class="fs-30 mb-5">Если вы заинтересованы в моих услугах как специалиста, у вас есть подходящая 
+                                вакансия или вопрос по проекту — я всегда открыта для диалога. Давайте обсудим, 
+                                как мы можем быть полезны друг другу.
+                            </div>
+                            <div>
+                                <div class="fs-30 mb-3">г. Москва</div>
+                                <div class="mb-lg-2 mb-0">
+                                    <i class="fab fa-telegram me-2" style="color: #FFDCE8;"></i>
+                                    <a href="https://t.me/pporappippamm" class="custom-link-c text-decoration-none">@pporappippamm</a>
+                                </div>
+                                <div class="mb-2">
+                                    <i class="fab fa-vk me-2" style="color: #FFDCE8;"></i> 
+                                    <a href="https://vk.com/pporappippammm" class="custom-link-c text-decoration-none">pporappippammm</a>
+                                </div>
+                                <div class="mb-2">
+                                    <i class="fas fa-envelope me-2" style="color: #FFDCE8;"></i>
+                                    <a href="mailto:2kichigina.lara4@gmail.com" class="custom-link-c text-decoration-none">2kichigina.lara4@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 ps-lg-5 pt-lg-5 pt-3 d-flex"> 
+                            <div class="rounded-4 border-0 p-4 w-100" style="background-color: #FFDCE8;">
+                                <form id="contactForm" class="contact-form">
+                                    <div class="mb-4">
+                                        <p class="mb-2">Имя Фамилия <span class="text-danger">*</span></p>
+                                        <input type="text" id="name" class="form-control custom-field" placeholder="Имя фамилия" required>
+                                        <div class="validation-message" id="nameMessage"></div>
+                                    </div>
+                                    
+                                    <div class="mb-4">
+                                        <p class="mb-2">Email или Телефон <span class="text-danger">*</span></p>
+                                        <input type="text" id="emailOrPhone" class="form-control custom-field" placeholder="Email или телефон с +7" >
+                                        <div class="validation-message" id="emailPhoneMessage"></div>
+                                        <p class="form-text">Введите email в формате example@mail.ru или телефон начиная с +7</p>
+                                    </div>
+                                    
+                                    <div class="mb-4">
+                                        <p class="mb-2">Пароль <span class="text-danger">*</span></p>
+                                        <input type="password" id="password" class="form-control custom-field" placeholder="Пароль" required>
+                                        <div class="validation-message" id="passwordMessage"></div>
+                                        <p class="form-text">Пароль должен содержать: минимум 8 символов, заглавные и строчные буквы, цифры, специальные символы</p>
+                                        
+                                        <div class="password-strength mt-2">
+                                            <div class="strength-bar">
+                                                <div class="strength-fill" id="strengthFill"></div>
+                                            </div>
+                                            <div class="strength-text" id="strengthText">Надежность пароля</div>
+                                        </div>
+                                        
+                                        <div class="password-requirements mt-2">
+                                            <div class="requirement fs-16" id="reqLength">✓ Минимум 8 символов</div>
+                                            <div class="requirement fs-16" id="reqUpper">✓ Заглавные буквы (A-Z)</div>
+                                            <div class="requirement fs-16" id="reqLower">✓ Строчные буквы (a-z)</div>
+                                            <div class="requirement fs-16" id="reqDigit">✓ Цифры (0-9)</div>
+                                            <div class="requirement fs-16" id="reqSpecial">✓ Специальные символы (!@#$%^&*)</div>
+                                            <div class="requirement fs-16" id="reqNoSpaces">✓ Без пробелов</div>
+                                            <div class="requirement fs-16" id="reqNoSequential">✓ Без последовательных символов</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-4">
+                                        <p class="mb-2">Сообщение</p>
+                                        <textarea id="message" class="form-control custom-field" placeholder="Сообщение" rows="3"></textarea>
+                                        <div class="validation-message" id="messageMessage"></div>
+                                    </div>
+                                    
+                                    <button type="submit" class="btn w-100 py-3 fs-24 custom-submit-btn"> 
+                                        Отправить
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="background-color: #FFDCE8;">
+        <div class="footer1 py-4">
+            <div class="container-fluid p-0">
+                <div class="row row-cols-1 row-cols-lg-2"> 
+                    <div class="container-fluid p-0 col-xl-6 col-12 ">
+                        <div class="column d-flex flex-column h-100">
+                            <div class="fs-40">LARA K.</div>
+                            <p>Сайт-резюме</p>
+                            <div class="rights mt-auto d-none d-lg-block">© 2025 Все права защищены.</div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid p-0">
+                        <div class="row">
+                            <div class="col-5 mb-4 mb-lg-0">
+                                <p class="mb-0 mb-sm-3" style="font-weight: 600;">Навигация</p>
+                                <div class="d-flex flex-column">
+                                        <a href="#main" class="custom-link text-decoration-none mb-2">Главная</a>
+                                        <a href="#about" class="custom-link text-decoration-none mb-2">Обо мне</a>
+                                        <a href="#skills" class="custom-link text-decoration-none mb-2">Навыки</a>
+                                        <a href="#portfolio" class="custom-link text-decoration-none mb-2">Портфолио</a>
+                                        <a href="#contacts" class="custom-link text-decoration-none">Контакты</a>                                    </div>
+                                </div>
+                            
+                            <div class="col-7 ">
+                                <p class="mb-0 mb-sm-3" style="font-weight: 600;">Контакты</p>
+                                <div class="d-flex flex-column">
+                                    <div class="mb-2">
+                                        <i class="fas fa-envelope me-2" style="color: #5E4838;"></i>
+                                        <a href="mailto:2kichigina.lara4@gmail.com" class="custom-link text-decoration-none">2kichigina.lara4@gmail.com</a>
+                                    </div>
+                                    <div class="mb-2">
+                                        <i class="fas fa-phone me-2" style="color: #5E4838;"></i>
+                                        <a href="tel:+79205220015" class="custom-link text-decoration-none">+7 (920) 522-00-15</a>
+                                    </div>
+                                    <div class="mb-2">
+                                        <i class="fab fa-telegram me-2" style="color: #5E4838;"></i>
+                                        <a href="https://t.me/pporappippamm" class="custom-link text-decoration-none">@pporappippamm</a>
+                                    </div>
+                                    <div class="mb-2">
+                                        <i class="fab fa-vk me-2" style="color: #5E4838;"></i> 
+                                        <a href="https://vk.com/pporappippammm" class="custom-link text-decoration-none">pporappippammm</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rights mt-auto d-lg-none d-block">© 2025 Все права защищены.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
